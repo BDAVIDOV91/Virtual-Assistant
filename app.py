@@ -59,7 +59,7 @@ class Assistant:
 
 
     def hello():
-        Assistant.speak('Hello! I am your desktop assistent. Tell me how may I help you ')
+        Assistant.speak('Hello! I am your desktop assistent. Tell me how may I help you')
 
 
     def takeQuery():
@@ -77,16 +77,16 @@ class Assistant:
                 webbrowser.open('www.google.bg')
                 continue
 
-            elif 'what day it is' in query:
+            elif 'what day is today' in query:
                 Assistant.tellDay()
                 continue
 
-            elif 'Whats the time' in query:
+            elif 'what is the time right now' in query:
                 Assistant.tellTime()
                 continue
 
             elif 'bye' in query:
-                Assistant.speak('Bye. Wish you to be the best at python proggraming')
+                Assistant.speak('Goodbye. Best regards, Dot')
                 exit()
 
             
@@ -98,7 +98,7 @@ class Assistant:
                 Assistant.speak('According to wikipedia')
                 Assistant.speak(result)
 
-            elif 'tell me your name ' in query:
+            elif 'what is your name' in query:
                 Assistant.speak('Hey I am Dot. Your dekstop Assistant')
 
 
